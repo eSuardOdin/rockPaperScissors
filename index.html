@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Rock, paper, scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <h1>Rock, paper, scissors</h1>
-    <input type="radio" name="rps" id="rock" value="Rock">
-    <input type="radio" name="rps" id="paper" value="Paper">
-    <input type="radio" name="rps" id="scissor" value="Scissors">
-    <button onclick="console.log(getComputerChoice())">Play</button>
+    <div class="header">
+        <h1 class="title">Rock Paper Scissors</h1>
+        div.
+        <h2>Score:</h2>
+        <p>You : <span id="hum-score">0</span></p>
+        <p>Computer : <span id="com-score">0</span></p>
+    </div>
+    
+    <div class="choice-container">
+        <div class="radio">
+            <input type="radio" name="rps" id="rock" value="Rock">
+            <label for="rock">Rock</label>
+            <input type="radio" name="rps" id="paper" value="Paper">
+            <label for="paper">Paper</label>
+            <input type="radio" name="rps" id="scissor" value="Scissors">
+            <label for="scissors">Scissors</label>
+        </div>
+        <button onclick="console.log(getComputerChoice())">
+            Play
+        </button>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
