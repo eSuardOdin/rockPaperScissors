@@ -6,14 +6,20 @@ body {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header {
    display: flex; 
-   background-color: #ccccff;
+   background-color: #c7c7c7;
    flex-direction: column;
    width: 100%;
    align-items: center;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
 }
 
 .score {
@@ -24,9 +30,46 @@ body {
     border: solid gray 2px;
     border-radius: 20px;
     padding: 20px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    font-size: 20px;
+    
 }
 
 .score-detail {
     display: flex;
     flex-direction: column;
+}
+
+.catchphrase {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20px;
+}
+.choice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: aliceblue;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 20%;
+}
+
+.radio {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px;
+}
+
+.radio-el {
+    border: solid gray 4px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+
 }

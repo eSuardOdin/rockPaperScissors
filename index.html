@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <!-- END FONTS -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +17,9 @@
 </head>
 <body>
     <div class="header">
-        <h1 class="title">Rock Paper Scissors</h1>
+        <p class="title">Rock Paper Scissors</p>
         <div class="score">
-            <h2>Score:</h2>
+            <p>Score:</p>
             <div class="score-detail">
                 <p>You : <span id="hum-score">0</span></p>
                 <p>Computer : <span id="com-score">0</span></p>
@@ -20,13 +28,20 @@
     </div>
     
     <div class="choice-container">
+        <p class="catchphrase">Make your move, human :</p>
         <div class="radio">
-            <input type="radio" name="rps" id="rock" value="Rock">
-            <label for="rock">Rock</label>
-            <input type="radio" name="rps" id="paper" value="Paper">
-            <label for="paper">Paper</label>
-            <input type="radio" name="rps" id="scissor" value="Scissors">
-            <label for="scissors">Scissors</label>
+            <div class="radio-el">
+                <input type="radio" name="rps" id="rock" value="Rock">
+                <label for="rock">Rock</label>
+            </div>
+            <div class="radio-el">
+                <input type="radio" name="rps" id="paper" value="Paper">
+                <label for="paper">Paper</label>
+            </div>
+            <div class="radio-el">
+                <input type="radio" name="rps" id="scissor" value="Scissors">
+                <label for="scissors">Scissors</label>
+            </div>
         </div>
         <button class="btn" disabled="true" onclick="playRound()">
             Play
