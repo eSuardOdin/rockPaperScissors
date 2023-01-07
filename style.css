@@ -11,15 +11,19 @@ body {
 .header {
    display: flex; 
    background-color: #ccccff;
-   border: black solid 2px;
    flex-direction: column;
    width: 100%;
    align-items: center;
 }
+
 .score {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    border: solid gray 2px;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .score-detail {
