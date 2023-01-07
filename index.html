@@ -10,10 +10,13 @@
 <body>
     <div class="header">
         <h1 class="title">Rock Paper Scissors</h1>
-        div.
-        <h2>Score:</h2>
-        <p>You : <span id="hum-score">0</span></p>
-        <p>Computer : <span id="com-score">0</span></p>
+        <div class="score">
+            <h2>Score:</h2>
+            <div class="score-detail">
+                <p>You : <span id="hum-score">0</span></p>
+                <p>Computer : <span id="com-score">0</span></p>
+            </div>
+        </div>
     </div>
     
     <div class="choice-container">
@@ -25,7 +28,7 @@
             <input type="radio" name="rps" id="scissor" value="Scissors">
             <label for="scissors">Scissors</label>
         </div>
-        <button onclick="console.log(getComputerChoice())">
+        <button class="btn" disabled="true" onclick="console.log(getComputerChoice())">
             Play
         </button>
     </div>

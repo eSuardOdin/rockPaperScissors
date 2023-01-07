@@ -5,8 +5,24 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .header {
-    
+   display: flex; 
+   background-color: #ccccff;
+   border: black solid 2px;
+   flex-direction: column;
+   width: 100%;
+   align-items: center;
+}
+.score {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.score-detail {
+    display: flex;
+    flex-direction: column;
 }
