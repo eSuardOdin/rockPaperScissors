@@ -45,17 +45,21 @@ const updateScore = (res) => {
 }
 
 const computeWinner = (huM, coM) => {
+    const roundPhrase = document.querySelector('.round');
     if( // Win
         huM === "Rock" && coM === "Scissors" ||
         huM === "Scissors" && coM === "Paper" ||
         huM === "Paper" && coM === "Rock") {
+            roundPhrase.innerHTML = `Player : ${huM}  /  Computer : ${coM} : You Win !`
             return 1;
     } else if( //Lose
         coM === "Rock" && huM === "Scissors" ||
         coM === "Scissors" && huM === "Paper" ||
         coM === "Paper" && huM === "Rock") {
+            roundPhrase.innerHTML = `Player : ${huM}  /  Computer : ${coM} : You Lose...`
             return -1;
         }
+    roundPhrase.innerHTML = `Player : ${huM}  /  Computer : ${coM} : It's a Draw`
     return 0; //Draw
 }
 
@@ -63,10 +67,10 @@ const computeWinner = (huM, coM) => {
 const playRound = () => {
     const playerMove = getPlayerChoice();
     const comMove = getComputerChoice();
-    console.log(`
+    /*console.log(`
     Player : ${playerMove}
     Computer : ${comMove}
-    `);
+    `);*/
 
     updateScore(computeWinner(playerMove, comMove));
 }
